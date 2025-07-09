@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* Navigation principale sticky avec burger mobile */}
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-white/40 backdrop-blur-md shadow-md rounded-full px-6 py-3 w-fit flex items-center gap-6 text-sm border border-white/30">
-        <span className="text-lg font-bold text-black">ncia Studio</span>
+        <span className="text-lg font-bold text-black">Uncia Studio</span>
 
         {/* Menu Desktop */}
         <div className="hidden sm:flex gap-6">
@@ -43,13 +43,12 @@ export default function Home() {
       {/* Menu mobile déroulant */}
       <AnimatePresence>
         {isOpen && (
-            <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                className="sm:hidden fixed top-20 left-1/2 -translate-x-1/2 z-40 flex flex-col items-center gap-4 bg-white/90 backdrop-blur-md py-6 px-8 rounded-xl shadow-lg w-full max-w-md"
-            >
-
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="sm:hidden fixed top-20 left-1/2 -translate-x-1/2 z-40 flex flex-col items-center gap-4 bg-white/90 backdrop-blur-md py-4 px-6 rounded-xl shadow-lg w-11/12 max-w-sm"
+          >
             <Link href="#" onClick={() => setIsOpen(false)} className="text-black text-sm">Accueil</Link>
             <Link href="#services" onClick={() => setIsOpen(false)} className="text-black text-sm">Services</Link>
             <Link href="#portfolio" onClick={() => setIsOpen(false)} className="text-black text-sm">Portfolio</Link>
