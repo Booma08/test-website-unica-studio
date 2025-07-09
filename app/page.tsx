@@ -43,12 +43,13 @@ export default function Home() {
       {/* Menu mobile déroulant */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="sm:hidden fixed top-20 left-1/2 -translate-x-1/2 z-40 flex flex-col items-center gap-4 bg-white/90 backdrop-blur-md py-4 px-6 rounded-xl shadow-lg w-11/12 max-w-sm"
-          >
+            <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                className="sm:hidden fixed top-20 left-1/2 -translate-x-1/2 z-40 flex flex-col items-center gap-4 bg-white/90 backdrop-blur-md py-6 px-8 rounded-xl shadow-lg w-full max-w-md"
+            >
+
             <Link href="#" onClick={() => setIsOpen(false)} className="text-black text-sm">Accueil</Link>
             <Link href="#services" onClick={() => setIsOpen(false)} className="text-black text-sm">Services</Link>
             <Link href="#portfolio" onClick={() => setIsOpen(false)} className="text-black text-sm">Portfolio</Link>
