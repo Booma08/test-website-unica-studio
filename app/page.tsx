@@ -3,11 +3,8 @@
 import Link from "next/link";
 import Head from "next/head";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
