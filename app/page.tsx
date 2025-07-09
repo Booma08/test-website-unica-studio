@@ -65,7 +65,7 @@ export default function Home() {
           {/* Image */}
           <div className="bg-gray-200 rounded-2xl overflow-hidden">
             <image
-              src="/images/project2.jpg"
+              src="public/images/Leopard-Des-Neiges.png"
               alt="Portfolio 3D"
               className="w-full h-full object-cover"
             />
