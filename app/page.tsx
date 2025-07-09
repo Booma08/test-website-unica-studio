@@ -2,6 +2,7 @@
 // pages/index.tsx
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -35,7 +36,7 @@ export default function Home() {
 
           {/* Image */}
           <div className="md:col-span-2 bg-gray-200 rounded-2xl overflow-hidden">
-            <img
+            <Image
               src="/images/hero.jpg"
               alt="3D visuel"
               className="w-full h-full object-cover"
@@ -64,7 +65,7 @@ export default function Home() {
 
           {/* Image */}
           <div className="bg-gray-200 rounded-2xl overflow-hidden">
-            <img
+            <Image
               src="public/images/Leopard-Des-Neiges.png"
               alt="Portfolio 3D"
               className="w-full h-full object-cover"
