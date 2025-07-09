@@ -26,7 +26,7 @@ export default function Contact() {
 
             <main className="min-h-screen flex flex-col items-center justify-center px-4 py-16 bg-white text-black">
                 <div className="max-w-xl w-full text-center">
-                    <h1 className="text-4xl font-bold mb-4">Vous avez un projet ? Parlons-en !</h1>
+                    <h1 className="text-4xl font-bold mb-4">On travaille enssemble ?</h1>
                     <p className="text-lg text-gray-600 mb-8">
                         Que vous soyez une marque, un créateur ou un studio, je serais ravi de collaborer avec vous pour donner vie à vos idées en 3D.
                     </p>
