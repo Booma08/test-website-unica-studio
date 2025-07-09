@@ -37,7 +37,7 @@ export default function Home() {
           {/* Image */}
           <div className="md:col-span-2 bg-gray-200 rounded-2xl overflow-hidden">
             <Image
-              src="/images/hero.jpg"
+              src="/images/Leopard-Des-Neiges.png"
               alt="3D visuel"
               className="w-full h-full object-cover"
             />
@@ -66,7 +66,7 @@ export default function Home() {
           {/* Image */}
           <div className="bg-gray-200 rounded-2xl overflow-hidden">
             <Image
-              src="public/images/Leopard-Des-Neiges.png"
+              src="images/Leopard-Des-Neiges.png"
               alt="Portfolio 3D"
               className="w-full h-full object-cover"
             />
