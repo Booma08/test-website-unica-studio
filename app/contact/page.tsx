@@ -62,9 +62,9 @@ export default function Contact() {
                             ></textarea>
                             <button
                                 type="submit"
-                                className="w-full bg-black text-white py-3 px-6 rounded-2x1 hover:bg-gray-800 transition"
+                                className="w-full bg-black text-white py-3 px-6 rounded-2xl shadow-md hover:bg-gray-900 transition-all duration-200"
                             >
-                                Envoyer
+                                ✉️ Envoyer
                             </button>
                         </form>
                     ) : (
