@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* Navigation principale sticky avec burger mobile */}
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-white/40 backdrop-blur-md shadow-md rounded-full px-6 py-3 w-fit flex items-center gap-6 text-sm border border-white/30">
-        <span className="text-lg font-bold text-black">Uncia Studio</span>
+        <span className="text-lg font-bold text-black">ncia Studio</span>
 
         {/* Menu Desktop */}
         <div className="hidden sm:flex gap-6">
