@@ -4,7 +4,6 @@ import "./globals.css";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react"; // ✅ Import manquant
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
