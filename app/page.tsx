@@ -66,7 +66,7 @@ export default function Home() {
             <div>
               <h2 className="text-2xl font-bold mb-2">Qui sommes-nous ?</h2>
               <p>
-                Studio d'animation 3D spécialisé dans la création de contenus visuels dynamiques et immersifs pour les marques, studios et créateurs.
+                Studio danimation 3D spécialisé dans la création de contenus visuels dynamiques et immersifs pour les marques, studios et créateurs.
               </p>
             </div>
             <p className="text-sm text-gray-300 mt-4">Explorons de nouvelles dimensions.</p>
