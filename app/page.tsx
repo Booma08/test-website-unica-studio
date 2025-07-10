@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <main className="min-h-screen pt-28 p-6 bg-white text-black">
-        <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">Bienvenue chez Uncia Studio</h1>
+        <h1 className="font-satoshi text-3xl font-bold">Bienvenue chez Uncia Studio</h1>
 
         <div className="max-w-screen-lg mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[200px] md:auto-rows-[250px]">
           {/* Présentation */}
