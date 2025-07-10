@@ -24,7 +24,7 @@ export default function Home() {
             </div>
 
             {/* Image */}
-            <div className="md:col-span-2 relative w-full h-64 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+            <div className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
             <Image
                   src="/images/Leopard-Des-Neiges.png"
                   alt="3D visuel"
@@ -56,9 +56,19 @@ export default function Home() {
             </div>
 
             {/* Deuxième image */}
-            <div className="relative w-full h-64 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+            <div className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
             <Image
-                  src="/images/Leopard-Des-Neiges.png"
+                  src="/images/Snow-Leopard.jpg"
+                  alt="Portfolio 3D"
+                  fill
+                  className="object-cover"
+              />
+            </div>
+
+            {/* Troisieme image */}
+            <div className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+              <Image
+                  src="/images/panthera-uncia.png"
                   alt="Portfolio 3D"
                   fill
                   className="object-cover"
