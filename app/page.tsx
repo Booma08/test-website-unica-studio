@@ -22,10 +22,11 @@ const itemVariants = {
     scale: 1,
     transition: {
       duration: 0.6,
-      ease: "easeInOut",
+      ease: [0.42, 0, 0.58, 1], // ✅ Bézier curve compatible avec TypeScript
     },
   },
 };
+
 
 export default function Home() {
   return (
