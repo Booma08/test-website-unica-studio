@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           {/* Portfolio CTA */}
-          <div id="portfolio" className="bg-gray-100 rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.01] transition-transform shadow-sm">
+          <div id="portfolio" className="bg-gray-100 rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.01] transition-transform shadow-md">
             <div>
               <h3 className="text-xl font-semibold mb-2">Portfolio</h3>
               <p className="text-sm">Découvrez nos projets récents et notre univers visuel.</p>
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
 
           {/* Image */}
-          <div className="bg-gray-200 rounded-2xl overflow-hidden">
+          <div className="bg-gray-200 rounded-2xl overflow-hidden shadow-md">
             <Image
               src="images/Leopard-Des-Neiges.png"
               alt="Portfolio 3D"
