@@ -1,20 +1,10 @@
 "use client";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
 
 export default function RootLayout({
                                        children,
@@ -25,7 +15,7 @@ export default function RootLayout({
 
     return (
         <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <body className="font-satoshi antialiased">
         {/* Navigation principale sticky avec burger mobile */}
         <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-white/40 backdrop-blur-md shadow-md rounded-full px-6 py-3 w-fit flex items-center gap-6 text-sm border border-white/30">
             <span className="text-lg font-bold text-black">Uncia Studio</span>
