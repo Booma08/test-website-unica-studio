@@ -8,16 +8,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Uncia Studio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-        <style>{`body { font-family: 'Barlow', sans-serif; }`}</style>
-      </Head>
 
       <main className="min-h-screen pt-28 p-6 bg-white text-black">
         <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">Bienvenue chez Uncia Studio</h1>
@@ -67,7 +57,7 @@ export default function Home() {
           {/* Image */}
           <div className="relative w-full h-64 bg-gray-200 rounded-2xl overflow-hidden shadow-md">
           <Image
-                src="images/Leopard-Des-Neiges.png"
+                src="/images/Leopard-Des-Neiges.png"
                 alt="Portfolio 3D"
                 fill
                 className="object-cover"
