@@ -33,7 +33,7 @@ export default function Home() {
         <section className="flex items-center justify-center h-[100vh] bg-white">
           <div className="w-3/4 max-w-md">
             <Image
-                src="./public/logo.svg"
+                src="../public/logo.svg"
                 alt="Uncia Studio Logo"
                 width={800}
                 height={800}
