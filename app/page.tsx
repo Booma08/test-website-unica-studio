@@ -35,11 +35,12 @@ export default function Home() {
           </div>
 
           {/* Image */}
-          <div className="md:col-span-2 bg-gray-200 rounded-2xl overflow-hidden">
-            <Image
-              src="/images/Leopard-Des-Neiges.png"
-              alt="3D visuel"
-              className="w-full h-full object-cover"
+          <div className="relative w-full h-64 md:col-span-2 bg-gray-200 rounded-2xl overflow-hidden">
+          <Image
+                src="/images/Leopard-Des-Neiges.png"
+                alt="3D visuel"
+                fill
+                className="object-cover"
             />
           </div>
 
@@ -64,11 +65,12 @@ export default function Home() {
           </div>
 
           {/* Image */}
-          <div className="bg-gray-200 rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="images/Leopard-Des-Neiges.png"
-              alt="Portfolio 3D"
-              className="w-full h-full object-cover"
+          <div className="relative w-full h-64 bg-gray-200 rounded-2xl overflow-hidden shadow-md">
+          <Image
+                src="images/Leopard-Des-Neiges.png"
+                alt="Portfolio 3D"
+                fill
+                className="object-cover"
             />
           </div>
 
