@@ -82,7 +82,7 @@ export default function Home() {
             </motion.div>
 
             {/* Portfolio CTA */}
-            <div
+            <motion.div
                 variants={itemVariants}
                 id="portfolio" className="bg-gray-100 border border-gray-200 rounded-2xl p-6 flex flex-col justify-between shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
               <div>
@@ -92,10 +92,10 @@ export default function Home() {
               <Link href="#portfolio" className="text-sm mt-4 text-blue-600 hover:underline">
                 Voir les projets →
               </Link>
-            </div>
+            </motion.div>
 
             {/* Deuxième image */}
-            <div
+            <motion.div
                 variants={itemVariants}
                 className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
             <Image
@@ -104,10 +104,10 @@ export default function Home() {
                   fill
                   className="object-cover"
               />
-            </div>
+            </motion.div>
 
             {/* Troisieme image */}
-            <div
+            <motion.div
                 variants={itemVariants}
                 className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
               <Image
@@ -116,10 +116,10 @@ export default function Home() {
                   fill
                   className="object-cover"
               />
-            </div>
+            </motion.div>
 
             {/* Rendez-vous CTA */}
-            <div
+            <motion.div
                 variants={itemVariants}
                 className="md:col-span-2 bg-blue-600 text-white rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.01] transition-transform border border-gray-200">
               <div>
@@ -132,7 +132,7 @@ export default function Home() {
               >
                 Prendre rendez-vous
               </Link>
-            </div>
+            </motion.div>
 
           </motion.div>
         </main>
