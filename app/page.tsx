@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           {/* Portfolio CTA */}
-          <div id="portfolio" className="bg-gray-100 rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.01] transition-transform">
+          <div id="portfolio" className="bg-gray-100 rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.01] transition-transform shadow-sm">
             <div>
               <h3 className="text-xl font-semibold mb-2">Portfolio</h3>
               <p className="text-sm">Découvrez nos projets récents et notre univers visuel.</p>
