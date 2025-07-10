@@ -5,12 +5,15 @@ import { motion } from "framer-motion";
 
 // Variants
 const contnairVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0 },
-  transition: {
-    staggerChildren: 0.15,
-  }
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15, // 👈 bien ici !
+    },
+  },
 };
+
 
 const itemVariants = {
   hidden: { opacity: 0, scale: 0.95 },
@@ -18,11 +21,12 @@ const itemVariants = {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.5,
-      ease: [0.25, 0.1, 0.25, 1], // 👈 easing valide
+      duration: 0.6,
+      ease: "easeInOut", // ✅ Corrigé pour TypeScript
     },
   },
 };
+
 
 
 export default function Home() {
@@ -33,13 +37,15 @@ export default function Home() {
             Bienvenue chez Uncia Studio
           </h1>
 
-          <div className="max-w-screen-lg mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[200px] md:auto-rows-[250px]">
+          <motion.div
+              variants={contnairVariants}
+              initial="hidden"
+              animate="visible"
+              className="max-w-screen-lg mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[200px] md:auto-rows-[250px]">
 
             {/* Présentation */}
             <motion.div
-                variants={contnairVariants}
-                initial="hidden"
-                animate="visible"
+                variants={itemVariants}
                 className="md:col-span-2 bg-black text-white rounded-2xl p-6 flex flex-col justify-between border border-gray-200 shadow transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.4)]">
             <div>
                 <h2 className="text-2xl font-bold mb-2">Qui sommes-nous ?</h2>
@@ -76,7 +82,9 @@ export default function Home() {
             </motion.div>
 
             {/* Portfolio CTA */}
-            <div id="portfolio" className="bg-gray-100 border border-gray-200 rounded-2xl p-6 flex flex-col justify-between shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+            <div
+                variants={itemVariants}
+                id="portfolio" className="bg-gray-100 border border-gray-200 rounded-2xl p-6 flex flex-col justify-between shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
               <div>
                 <h3 className="text-xl font-semibold mb-2">Portfolio</h3>
                 <p className="text-sm">Découvrez nos projets récents et notre univers visuel.</p>
@@ -87,7 +95,9 @@ export default function Home() {
             </div>
 
             {/* Deuxième image */}
-            <div className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+            <div
+                variants={itemVariants}
+                className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
             <Image
                   src="/images/Snow-Leopard.jpg"
                   alt="Portfolio 3D"
@@ -97,7 +107,9 @@ export default function Home() {
             </div>
 
             {/* Troisieme image */}
-            <div className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+            <div
+                variants={itemVariants}
+                className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
               <Image
                   src="/images/panthera-uncia.png"
                   alt="Portfolio 3D"
@@ -107,7 +119,9 @@ export default function Home() {
             </div>
 
             {/* Rendez-vous CTA */}
-            <div className="md:col-span-2 bg-blue-600 text-white rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.01] transition-transform border border-gray-200">
+            <div
+                variants={itemVariants}
+                className="md:col-span-2 bg-blue-600 text-white rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.01] transition-transform border border-gray-200">
               <div>
                 <h3 className="text-xl font-semibold mb-2">Travaillons ensemble</h3>
                 <p className="text-sm">Discutons de votre projet autour d’un appel ou d’un café visio ☕</p>
@@ -120,7 +134,7 @@ export default function Home() {
               </Link>
             </div>
 
-          </div>
+          </motion.div>
         </main>
       </>
   );
