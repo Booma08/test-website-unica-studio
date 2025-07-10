@@ -17,15 +17,14 @@ export default function RootLayout({
         <html lang="en">
         <body className="font-satoshi antialiased">
         {/* Navigation principale sticky avec burger mobile */}
-        <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-white/40 backdrop-blur-md shadow-md rounded-full px-6 py-3 w-fit flex items-center gap-6 text-sm border border-white/30">
-            <span className="text-lg font-bold text-black">Uncia Studio</span>
+        <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-white/40 backdrop-blur-md shadow-md rounded-3xl px-6 py-3 w-fit flex items-center gap-6 text-sm border border-white/30">
 
             {/* Menu Desktop */}
-            <div className="hidden sm:flex gap-6">
-                <Link href="#" className="hover:underline text-black">Accueil</Link>
-                <Link href="#services" className="hover:underline text-black">Services</Link>
-                <Link href="#portfolio" className="hover:underline text-black">Portfolio</Link>
-                <Link href="/contact" className="hover:underline text-black">Contact</Link>
+            <div className="hidden sm:flex gap-14">
+                <Link href="#" className="transition duration-50 hover:opacity-80 text-gray-800 m-2 font-black text-xl">Accueil</Link>
+                <Link href="#services" className="transition duration-50 hover:opacity-80 text-gray-800 m-2 font-black text-xl">Services</Link>
+                <Link href="#portfolio" className="transition duration-50 hover:opacity-80 text-gray-800 m-2 font-black text-xl">Portfolio</Link>
+                <Link href="/contact" className="transition duration-50 hover:opacity-80 text-gray-800 m-2 font-black text-xl">Contact</Link>
             </div>
 
             {/* Menu Mobile Toggle */}
