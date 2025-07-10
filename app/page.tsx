@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 
 export default function Home() {
   return (
@@ -13,7 +15,11 @@ export default function Home() {
           <div className="max-w-screen-lg mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[200px] md:auto-rows-[250px]">
 
             {/* Présentation */}
-            <div className="md:col-span-2 bg-black text-white rounded-2xl p-6 flex flex-col justify-between border border-gray-200 shadow transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.4)]">
+            <motion.div
+                initial={{opacity: 0, scale: 0.95}}
+                animate={{opacity: 1, scale: 1}}
+                transition={{duration: 0.6, ease: "easeInOut"}}
+                className="md:col-span-2 bg-black text-white rounded-2xl p-6 flex flex-col justify-between border border-gray-200 shadow transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.4)]">
             <div>
                 <h2 className="text-2xl font-bold mb-2">Qui sommes-nous ?</h2>
                 <p>
@@ -21,7 +27,7 @@ export default function Home() {
                 </p>
               </div>
               <p className="text-sm text-gray-300 mt-4">Explorons de nouvelles dimensions.</p>
-            </div>
+            </motion.div>
 
             {/* Image */}
             <div className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
