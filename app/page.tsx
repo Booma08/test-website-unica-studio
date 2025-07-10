@@ -13,8 +13,8 @@ export default function Home() {
           <div className="max-w-screen-lg mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[200px] md:auto-rows-[250px]">
 
             {/* Présentation */}
-            <div className="md:col-span-2 bg-black text-white rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.01] transition-transform border border-gray-200">
-              <div>
+            <div className="md:col-span-2 bg-black text-white rounded-2xl p-6 flex flex-col justify-between border border-gray-200 shadow transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.4)]">
+            <div>
                 <h2 className="text-2xl font-bold mb-2">Qui sommes-nous ?</h2>
                 <p>
                   Studio danimation 3D spécialisé dans la création de contenus visuels dynamiques et immersifs pour les marques, studios et créateurs.
@@ -24,8 +24,8 @@ export default function Home() {
             </div>
 
             {/* Image */}
-            <div className="relative w-full h-64 md:col-span-2 bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
-              <Image
+            <div className="md:col-span-2 relative w-full h-64 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+            <Image
                   src="/images/Leopard-Des-Neiges.png"
                   alt="3D visuel"
                   fill
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
 
             {/* Services */}
-            <div id="services" className="bg-white rounded-2xl p-6 shadow hover:shadow-md hover:scale-[1.01] transition-transform border border-gray-200">
+            <div id="services" className="md:col-span-1 rounded-2xl p-6 shadow-none hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.05] transition-transform border border-gray-200">
               <h3 className="text-xl font-semibold mb-2">Nos Services</h3>
               <ul className="text-sm space-y-1">
                 <li>✔️ Animation 3D de personnages</li>
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
 
             {/* Portfolio CTA */}
-            <div id="portfolio" className="bg-gray-100 rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.01] transition-transform shadow-md border border-gray-200">
+            <div id="portfolio" className="bg-gray-100 border border-gray-200 rounded-2xl p-6 flex flex-col justify-between shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
               <div>
                 <h3 className="text-xl font-semibold mb-2">Portfolio</h3>
                 <p className="text-sm">Découvrez nos projets récents et notre univers visuel.</p>
@@ -56,8 +56,8 @@ export default function Home() {
             </div>
 
             {/* Deuxième image */}
-            <div className="relative w-full h-64 bg-gray-200 rounded-2xl overflow-hidden shadow-md border border-gray-200">
-              <Image
+            <div className="relative w-full h-64 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+            <Image
                   src="/images/Leopard-Des-Neiges.png"
                   alt="Portfolio 3D"
                   fill
