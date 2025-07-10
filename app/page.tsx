@@ -21,18 +21,28 @@ const itemVariants = {
     scale: 1,
     transition: {
       duration: 0.6,
-      ease: easeInOut, // ✅ fonction d'easing
+      ease: easeInOut,
     },
   },
 };
 
 export default function Home() {
   return (
-      <main className="min-h-screen pt-28 p-6 bg-white text-black">
-        <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">
-          Bienvenue chez Uncia Studio
-        </h1>
+      <main className="min-h-screen bg-white text-black">
+        {/* Landing Section */}
+        <section className="flex items-center justify-center h-[100vh] bg-white">
+          <div className="w-3/4 max-w-md">
+            <Image
+                src="/images/logo-uncia.png"
+                alt="Uncia Studio Logo"
+                width={800}
+                height={800}
+                className="object-contain w-full h-auto"
+            />
+          </div>
+        </section>
 
+        {/* Grid Section */}
         <motion.div
             variants={containerVariants}
             initial="hidden"
