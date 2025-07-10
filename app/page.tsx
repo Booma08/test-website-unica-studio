@@ -30,16 +30,8 @@ export default function Home() {
   return (
       <main className="min-h-screen bg-white text-black">
         {/* Landing Section */}
-        <section className="flex items-center justify-center h-[100vh] bg-white">
-          <div className="w-3/4 max-w-md">
-            <Image
-                src="/logo.svg"
-                alt="Uncia Studio Logo"
-                width={800}
-                height={800}
-                className="object-contain w-full h-auto"
-            />
-          </div>
+        <section className="h-screen flex items-start justify-center pt-24">
+          <Image src="/logo.svg" alt="Uncia Studio" width={1200} height={1200} />
         </section>
 
         {/* Grid Section */}
