@@ -3,6 +3,19 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+// Variants
+const contnairVariants = {
+  hidden: { opacity: 0, y: 10 },
+  visible: { opacity: 1, y: 0 },
+  transition: {
+    staggerChildren: 0.15,
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: "easeOut" } },
+};
 
 export default function Home() {
   return (
@@ -16,9 +29,9 @@ export default function Home() {
 
             {/* Présentation */}
             <motion.div
-                initial={{opacity: 0, scale: 0.95}}
-                animate={{opacity: 1, scale: 1}}
-                transition={{duration: 0.6, ease: "easeInOut"}}
+                variants={contnairVariants}
+                initial="hidden"
+                animate="visible"
                 className="md:col-span-2 bg-black text-white rounded-2xl p-6 flex flex-col justify-between border border-gray-200 shadow transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.4)]">
             <div>
                 <h2 className="text-2xl font-bold mb-2">Qui sommes-nous ?</h2>
@@ -30,17 +43,21 @@ export default function Home() {
             </motion.div>
 
             {/* Image */}
-            <div className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+            <motion.div
+                variants={itemVariants}
+                className="relative w-full min-h-[200px] md:h-64 md:col-span-2 bg-gray-200 border border-gray-200 rounded-2xl overflow-hidden shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
             <Image
                   src="/images/Leopard-Des-Neiges.png"
                   alt="3D visuel"
                   fill
                   className="object-cover"
               />
-            </div>
+            </motion.div>
 
             {/* Services */}
-            <div id="services" className="md:col-span-1 rounded-2xl p-6 shadow-none hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.05] transition-transform border border-gray-200">
+            <motion.div
+                variants={itemVariants}
+                id="services" className="md:col-span-1 rounded-2xl p-6 shadow-none hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.05] transition-transform border border-gray-200">
               <h3 className="text-xl font-semibold mb-2">Nos Services</h3>
               <ul className="text-sm space-y-1">
                 <li>✔️ Animation 3D de personnages</li>
@@ -48,7 +65,7 @@ export default function Home() {
                 <li>✔️ Rendus cinématographiques</li>
                 <li>✔️ Prévisualisation (previz)</li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Portfolio CTA */}
             <div id="portfolio" className="bg-gray-100 border border-gray-200 rounded-2xl p-6 flex flex-col justify-between shadow-none hover:scale-[1.05] hover:shadow-[0_0_40px_rgba(0,0,0,0.08)] transition-all duration-300">
