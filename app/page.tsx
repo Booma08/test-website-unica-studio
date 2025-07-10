@@ -1,10 +1,9 @@
 "use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, easeInOut } from "framer-motion";
 
-// === Animation Variants ===
+// Variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -22,23 +21,17 @@ const itemVariants = {
     scale: 1,
     transition: {
       duration: 0.6,
-      ease: [0.42, 0, 0.58, 1], // ✅ Bézier curve compatible avec TypeScript
+      ease: easeInOut, // ✅ fonction d'easing
     },
   },
 };
 
-
 export default function Home() {
   return (
       <main className="min-h-screen pt-28 p-6 bg-white text-black">
-        <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-4xl md:text-5xl font-bold mb-10 text-center"
-        >
+        <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">
           Bienvenue chez Uncia Studio
-        </motion.h1>
+        </h1>
 
         <motion.div
             variants={containerVariants}
@@ -54,14 +47,10 @@ export default function Home() {
             <div>
               <h2 className="text-2xl font-bold mb-2">Qui sommes-nous ?</h2>
               <p>
-                Studio d’animation 3D spécialisé dans la création de contenus
-                visuels dynamiques et immersifs pour les marques, studios et
-                créateurs.
+                Studio d’animation 3D spécialisé dans la création de contenus visuels dynamiques et immersifs pour les marques, studios et créateurs.
               </p>
             </div>
-            <p className="text-sm text-gray-300 mt-4">
-              Explorons de nouvelles dimensions.
-            </p>
+            <p className="text-sm text-gray-300 mt-4">Explorons de nouvelles dimensions.</p>
           </motion.div>
 
           {/* Image 1 */}
@@ -100,14 +89,9 @@ export default function Home() {
           >
             <div>
               <h3 className="text-xl font-semibold mb-2">Portfolio</h3>
-              <p className="text-sm">
-                Découvrez nos projets récents et notre univers visuel.
-              </p>
+              <p className="text-sm">Découvrez nos projets récents et notre univers visuel.</p>
             </div>
-            <Link
-                href="#portfolio"
-                className="text-sm mt-4 text-blue-600 hover:underline"
-            >
+            <Link href="#portfolio" className="text-sm mt-4 text-blue-600 hover:underline">
               Voir les projets →
             </Link>
           </motion.div>
@@ -138,7 +122,7 @@ export default function Home() {
             />
           </motion.div>
 
-          {/* Rendez-vous CTA */}
+          {/* Contact CTA */}
           <motion.div
               variants={itemVariants}
               className="md:col-span-2 bg-blue-600 text-white rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.01] transition-transform border border-gray-200"
