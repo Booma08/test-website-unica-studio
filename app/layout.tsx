@@ -21,9 +21,9 @@ export default function RootLayout({
 
             {/* Menu Desktop */}
             <div className="hidden sm:flex gap-14">
-                <Link href="#" className="transition duration-50 hover:opacity-80 text-gray-800 m-2 font-black text-xl">Accueil</Link>
+                <Link href="/" className="transition duration-50 hover:opacity-80 text-gray-800 m-2 font-black text-xl">Accueil</Link>
                 <Link href="#services" className="transition duration-50 hover:opacity-80 text-gray-800 m-2 font-black text-xl">Services</Link>
-                <Link href="#portfolio" className="transition duration-50 hover:opacity-80 text-gray-800 m-2 font-black text-xl">Portfolio</Link>
+                <Link href="/portfolio" className="transition duration-50 hover:opacity-80 text-gray-800 m-2 font-black text-xl">Portfolio</Link>
                 <Link href="/contact" className="transition duration-50 hover:opacity-80 text-gray-800 m-2 font-black text-xl">Contact</Link>
             </div>
 
